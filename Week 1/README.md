@@ -19,6 +19,7 @@
 - Functions, parameters, lambda functions
 - Modules, imports, virtual environments, pip
 - Classes, objects, constructors, methods, inheritance
+- **Deliverable:** Reusable student-report application
 
 ### Day 4: Python for AI Development
 - File handling (CSV/JSON), exception handling, logging
