@@ -25,6 +25,7 @@
 - File handling (CSV/JSON), exception handling, logging
 - Environment variables (.env), API requests
 - NumPy arrays, vectorized operations
+- **Deliverable:** CSV-to-JSON NumPy data pipeline
 
 ### Day 5: Weekly Project & Revision
 - **Project:** Build a complete Python application combining all week's concepts

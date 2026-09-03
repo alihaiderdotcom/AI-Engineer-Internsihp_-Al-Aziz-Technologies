@@ -41,7 +41,7 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 1, Day 1** - Python Fundamentals
 - [x] **Week 1, Day 2** - Python Data Structures & Control Flow
 - [x] **Week 1, Day 3** - Functions, Modules & OOP
-- [ ] Week 1, Day 4 - Python for AI Development
+- [x] **Week 1, Day 4** - Python for AI Development
 - [ ] Week 1, Day 5 - Weekly Project & Revision
 - [ ] Weeks 2-6 (in progress)
 
