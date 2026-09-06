@@ -31,6 +31,8 @@
 - **Project:** Build a complete Python application combining all week's concepts
 - **Deliverable:** GitHub repo with README, requirements.txt, clean code structure
 
+**Progress:** Week 1 complete through the weekly project.
+
 ## Key Concepts to Master
 
 ✓ Python syntax and data types  
