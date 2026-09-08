@@ -1,0 +1,11 @@
+day,product,quantity,price,revenue
+1,Python Course,2,25,50
+1,Data Analysis,3,30,90
+2,Python Course,1,25,25
+2,Machine Learning,2,45,90
+3,AI Workshop,1,50,50
+3,Data Analysis,4,30,120
+4,Machine Learning,3,45,135
+4,AI Workshop,2,50,100
+5,Python Course,3,25,75
+5,Data Analysis,2,30,60

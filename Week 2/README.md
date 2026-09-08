@@ -17,10 +17,12 @@
 ### Day 2: Data Analysis & Visualization
 - EDA, descriptive statistics, correlation, and outliers
 - Matplotlib visualizations
+- **Deliverable:** EDA report and four saved charts
 
 ### Day 3: Machine Learning Fundamentals
 - Supervised and unsupervised learning
 - Classification, regression, clustering, preprocessing, and train/test split
+- **Deliverable:** Scaled baseline classification model
 
 ### Day 4: Scikit-learn & Model Evaluation
 - Models, predictions, metrics, overfitting, and cross-validation

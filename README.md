@@ -44,7 +44,8 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 1, Day 4** - Python for AI Development
 - [x] **Week 1, Day 5** - Weekly Project & Revision
 - [x] **Week 2, Day 1** - NumPy & Pandas
-- [ ] Week 2, Day 2 - Data Analysis & Visualization
+- [x] **Week 2, Day 2** - Data Analysis & Visualization
+- [x] **Week 2, Day 3** - Machine Learning Fundamentals
 - [ ] Weeks 2-6 (in progress)
 
 ## Technologies & Tools
