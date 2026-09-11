@@ -46,6 +46,7 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 2, Day 1** - NumPy & Pandas
 - [x] **Week 2, Day 2** - Data Analysis & Visualization
 - [x] **Week 2, Day 3** - Machine Learning Fundamentals
+- [x] **Week 2, Day 4** - Scikit-learn & Model Evaluation
 - [ ] Weeks 2-6 (in progress)
 
 ## Technologies & Tools

@@ -26,6 +26,7 @@
 
 ### Day 4: Scikit-learn & Model Evaluation
 - Models, predictions, metrics, overfitting, and cross-validation
+- **Deliverable:** Multi-model evaluation and comparison report
 
 ### Day 5: Weekly Project & Revision
 - Complete and document a machine learning project
