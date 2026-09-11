@@ -30,3 +30,7 @@
 
 ### Day 5: Weekly Project & Revision
 - Complete and document a machine learning project
+- Complete and document a machine learning project
+- **Deliverable:** End-to-end ML pipeline with report
+
+**Progress:** Day 5 complete. ✓
