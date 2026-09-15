@@ -47,9 +47,9 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 2, Day 2** - Data Analysis & Visualization
 - [x] **Week 2, Day 3** - Machine Learning Fundamentals
 - [x] **Week 2, Day 4** - Scikit-learn & Model Evaluation
-- [ ] Weeks 2-6 (in progress)
-- [x] **Week 2, Day 4** - Scikit-learn & Model Evaluation
 - [x] **Week 2, Day 5** - Weekly Project & Revision
+- [x] **Week 3, Day 1** - Deep Learning Fundamentals
+- [x] **Week 3, Day 2** - PyTorch Fundamentals
 - [ ] Weeks 3-6 (in progress)
 
 ## Technologies & Tools
