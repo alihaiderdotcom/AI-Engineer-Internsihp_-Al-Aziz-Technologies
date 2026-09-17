@@ -1,0 +1,12 @@
+{
+    "final_train_loss": 0.010084967389702796,
+    "final_train_acc": 0.99625,
+    "final_val_loss": 0.0012045706680510193,
+    "final_val_acc": 1.0,
+    "classes": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Cross"
+    ]
+}

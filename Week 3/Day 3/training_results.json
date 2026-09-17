@@ -1,0 +1,26 @@
+{
+    "baseline": {
+        "final_train_loss": 0.0024267918509172483,
+        "final_train_acc": 1.0,
+        "final_val_loss": 0.7110009837150574,
+        "final_val_acc": 0.8833333333333333,
+        "best_val_loss": 0.30080642461776735,
+        "best_val_acc": 0.9
+    },
+    "regularized": {
+        "final_train_loss": 0.2061096657647027,
+        "final_train_acc": 0.9311111111111111,
+        "final_val_loss": 0.3020678464571635,
+        "final_val_acc": 0.8966666666666666,
+        "best_val_loss": 0.26217744827270506,
+        "best_val_acc": 0.92
+    },
+    "sgd_momentum": {
+        "final_train_loss": 0.22660072260432773,
+        "final_train_acc": 0.92,
+        "final_val_loss": 0.2657135562102,
+        "final_val_acc": 0.9066666666666666,
+        "best_val_loss": 0.25529153148333233,
+        "best_val_acc": 0.9133333333333333
+    }
+}

@@ -1,0 +1,17 @@
+VisionFlow Evaluation Report
+===================================
+Checkpoint   : /home/ali-son-of-zulfiqar/Documents/AI Engineer Internsihp_ Al Aziz Technologies/Week 3/Day 5/best_vision_model.pth
+Test Loss    : 0.0507
+Test Accuracy: 98.22%
+
+              precision    recall  f1-score   support
+
+      Circle       1.00      0.98      0.99        46
+      Square       1.00      0.97      0.99        39
+    Triangle       0.96      0.98      0.97        47
+        Star       0.97      1.00      0.99        37
+     Hexagon       0.98      0.98      0.98        56
+
+    accuracy                           0.98       225
+   macro avg       0.98      0.98      0.98       225
+weighted avg       0.98      0.98      0.98       225

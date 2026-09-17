@@ -18,8 +18,20 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 │   ├── Day 4/ - Python for AI Development
 │   └── Day 5/ - Weekly Project & Revision
 │
-├── Week 2/ - Data Analysis, Machine Learning & Model Development
-├── Week 3/ - Deep Learning, PyTorch & Computer Vision
+├── Week 2/
+│   ├── Day 1/ - NumPy & Pandas
+│   ├── Day 2/ - Data Analysis & Visualization
+│   ├── Day 3/ - Machine Learning Fundamentals
+│   ├── Day 4/ - Scikit-learn & Model Evaluation
+│   └── Day 5/ - Weekly Project & Revision
+│
+├── Week 3/
+│   ├── Day 1/ - Deep Learning Fundamentals
+│   ├── Day 2/ - PyTorch Fundamentals
+│   ├── Day 3/ - Neural Network Training & Optimization
+│   ├── Day 4/ - Computer Vision Fundamentals & CNNs
+│   └── Day 5/ - Weekly Project & Revision (VisionFlow System)
+│
 ├── Week 4/ - Generative AI, LLMs & Hugging Face
 ├── Week 5/ - RAG, Vector Databases, AI Agents & APIs
 └── Week 6/ - Advanced AI Engineering & Master Project
@@ -50,7 +62,10 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 2, Day 5** - Weekly Project & Revision
 - [x] **Week 3, Day 1** - Deep Learning Fundamentals
 - [x] **Week 3, Day 2** - PyTorch Fundamentals
-- [ ] Weeks 3-6 (in progress)
+- [x] **Week 3, Day 3** - Neural Network Training & Optimization
+- [x] **Week 3, Day 4** - Computer Vision Fundamentals & CNNs
+- [x] **Week 3, Day 5** - Weekly Project & Revision (VisionFlow)
+- [ ] Weeks 4-6 (in progress)
 
 ## Technologies & Tools
 
@@ -65,8 +80,8 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 
 Each week includes a practical project that reinforces the concepts learned:
 - Week 1: Console-based Python applications
-- Week 2: Machine Learning model on real dataset
-- Week 3: Deep Learning neural network with PyTorch
+- Week 2: Machine Learning model on real dataset (Iris Classification)
+- Week 3: Deep Learning neural network & Computer Vision system with PyTorch (VisionFlow CNN)
 - Week 4: AI assistant with LLM integration
 - Week 5: RAG-based document Q&A system
 - Week 6: Master Project (Comprehensive AI Application)
@@ -77,4 +92,4 @@ Each day's README includes personal reflections and key takeaways to solidify le
 
 ---
 
-**Last Updated:** September 1, 2026
+**Last Updated:** September 18, 2026
