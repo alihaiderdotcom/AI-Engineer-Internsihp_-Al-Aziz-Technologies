@@ -1,0 +1,58 @@
+{
+  "intern": "Ali Haider",
+  "week": 4,
+  "day": 3,
+  "topic": "Hugging Face Transformers & Inference",
+  "classification": [
+    {
+      "text": "The newly trained transformer model achieved state-of-the-art accuracy on the validation set!",
+      "label": "POSITIVE",
+      "score": 0.9993
+    },
+    {
+      "text": "Unfortunately, the inference latency increased dramatically and caused memory allocation errors.",
+      "label": "NEGATIVE",
+      "score": 0.9996
+    },
+    {
+      "text": "The internship program covers machine learning, deep learning, PyTorch, and LLMs.",
+      "label": "POSITIVE",
+      "score": 0.9693
+    }
+  ],
+  "text_generation": [
+    {
+      "prompt": "The future of Artificial Intelligence in software engineering will",
+      "completion": "The future of Artificial Intelligence in software engineering will depend on the nature of the technology, and the complexity and sophistication of a machine.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "model": "distilgpt2"
+    }
+  ],
+  "zero_shot_classification": [
+    {
+      "label": "Computer Vision",
+      "score": 0.3726
+    },
+    {
+      "label": "Finance & Banking",
+      "score": 0.313
+    },
+    {
+      "label": "Cloud Computing",
+      "score": 0.1949
+    },
+    {
+      "label": "Natural Language Processing",
+      "score": 0.1195
+    }
+  ],
+  "embeddings_and_similarity": {
+    "corpus": [
+      "Deep learning models require GPUs for accelerated gradient descent.",
+      "Neural networks train faster when executed on graphic processing units.",
+      "Cooking traditional Italian pizza requires high-temperature stone ovens."
+    ],
+    "embedding_dimensions": 384,
+    "similarity_related_pair": 0.0079,
+    "similarity_unrelated_pair": 0.048
+  }
+}

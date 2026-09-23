@@ -33,6 +33,12 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 │   └── Day 5/ - Weekly Project & Revision (VisionFlow System)
 │
 ├── Week 4/ - Generative AI, LLMs & Hugging Face
+│   ├── Day 1/ - Generative AI & LLM Fundamentals
+│   ├── Day 2/ - Hugging Face Transformers & Pipelines
+│   ├── Day 3/ - Fine-Tuning & Prompt Tuning
+│   ├── Day 4/ - Embeddings & Semantic Search
+│   └── Day 5/ - Weekly Project & Revision
+│
 ├── Week 5/ - RAG, Vector Databases, AI Agents & APIs
 └── Week 6/ - Advanced AI Engineering & Master Project
 ```
@@ -65,31 +71,11 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 3, Day 3** - Neural Network Training & Optimization
 - [x] **Week 3, Day 4** - Computer Vision Fundamentals & CNNs
 - [x] **Week 3, Day 5** - Weekly Project & Revision (VisionFlow)
+- [x] **Week 4, Day 1** - Generative AI & LLM Fundamentals
 - [ ] Weeks 4-6 (in progress)
 
 ## Technologies & Tools
 
 **Languages:** Python 3.x  
 **ML/AI Libraries:** NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow  
-**LLM Frameworks:** LangChain, Hugging Face Transformers  
-**APIs:** FastAPI, LLM APIs  
-**Databases:** Vector Databases (for RAG)  
-**Tools:** Git, GitHub, VS Code, Jupyter Notebook
-
-## Key Projects
-
-Each week includes a practical project that reinforces the concepts learned:
-- Week 1: Console-based Python applications
-- Week 2: Machine Learning model on real dataset (Iris Classification)
-- Week 3: Deep Learning neural network & Computer Vision system with PyTorch (VisionFlow CNN)
-- Week 4: AI assistant with LLM integration
-- Week 5: RAG-based document Q&A system
-- Week 6: Master Project (Comprehensive AI Application)
-
-## Reflection & Learning
-
-Each day's README includes personal reflections and key takeaways to solidify learning.
-
----
-
-**Last Updated:** September 18, 2026
+**LLM Frameworks:**

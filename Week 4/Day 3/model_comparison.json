@@ -1,0 +1,89 @@
+{
+  "intern": "Ali Haider",
+  "week": 4,
+  "day": 3,
+  "tradeoff_analysis": {
+    "Local Transformer Inference (PyTorch / ONNX)": {
+      "pros": [
+        "100% data privacy and confidentiality (no outbound corporate data transmission)",
+        "Zero operational API cost per million tokens",
+        "Deterministic low latency on dedicated on-premise hardware",
+        "Operates completely offline without internet dependencies"
+      ],
+      "cons": [
+        "Requires high-end GPU hardware (VRAM capacity constraints)",
+        "Host machine maintenance, driver management (CUDA/cuDNN), and thermal throttling",
+        "Limited model scale bounded by physical hardware (e.g. 7B-14B on single workstation)"
+      ],
+      "ideal_use_case": "Sensitive enterprise data, healthcare records, high-frequency local pipelines"
+    },
+    "Cloud API-based Inference (OpenRouter / OpenAI / Anthropic)": {
+      "pros": [
+        "Access to frontier state-of-the-art models (70B, 405B+, MoE)",
+        "Zero infrastructure setup; no GPU hardware capital expenditure",
+        "Elastic auto-scaling handling sudden spikes in query volume",
+        "Continuous updates and state-of-the-art safety alignments"
+      ],
+      "cons": [
+        "Variable recurring operational costs based on token consumption",
+        "Data transmitted across third-party networks (compliance/PII risk)",
+        "Network latency overhead and risk of rate limits (HTTP 429)"
+      ],
+      "ideal_use_case": "Complex reasoning, customer-facing web apps, rapid prototyping, multimodal tasks"
+    }
+  },
+  "memory_scaling_matrix": [
+    {
+      "model": "DistilBERT / TinyLlama",
+      "params_b": 0.066,
+      "fp32_gb": 0.32,
+      "fp16_gb": 0.16,
+      "int8_gb": 0.08,
+      "int4_gb": 0.04
+    },
+    {
+      "model": "LFM / Gemma-2B",
+      "params_b": 2.6,
+      "fp32_gb": 12.48,
+      "fp16_gb": 6.24,
+      "int8_gb": 3.12,
+      "int4_gb": 1.56
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "params_b": 8.0,
+      "fp32_gb": 38.4,
+      "fp16_gb": 19.2,
+      "int8_gb": 9.6,
+      "int4_gb": 4.8
+    },
+    {
+      "model": "Qwen-2.5-14B",
+      "params_b": 14.0,
+      "fp32_gb": 67.2,
+      "fp16_gb": 33.6,
+      "int8_gb": 16.8,
+      "int4_gb": 8.4
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "params_b": 70.0,
+      "fp32_gb": 336.0,
+      "fp16_gb": 168.0,
+      "int8_gb": 84.0,
+      "int4_gb": 42.0
+    }
+  ],
+  "hardware_considerations": {
+    "CPU Inference": {
+      "advantages": "Universal availability, vast system RAM (e.g. 64GB-128GB RAM is cheaper than VRAM)",
+      "bottlenecks": "Memory bandwidth constraints (DDR4/DDR5: ~50-100 GB/s vs GPU HBM: >1,000 GB/s)",
+      "mitigations": "Use 4-bit GGUF quantization with llama.cpp or ONNX Runtime CPU multi-threading"
+    },
+    "GPU Inference": {
+      "advantages": "Massive parallel vector cores, high-bandwidth VRAM, FlashAttention kernel support",
+      "bottlenecks": "High hardware costs, strict VRAM limits (OOM crashes if context spikes)",
+      "mitigations": "PagedAttention (vLLM), 8-bit/4-bit quantization (bitsandbytes/AWQ/GPTQ)"
+    }
+  }
+}

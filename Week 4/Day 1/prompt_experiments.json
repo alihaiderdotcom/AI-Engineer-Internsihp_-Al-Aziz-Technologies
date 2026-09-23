@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-23",
+  "intern": "Ali Haider",
+  "week": 4,
+  "day": 1,
+  "topic": "Generative AI & LLM Fundamentals",
+  "token_metrics": {
+    "text_preview": "Large Language Models (LLMs) are deep neural networks traine...",
+    "character_count": 180,
+    "word_count": 24,
+    "estimated_tokens": 45,
+    "char_to_token_ratio": 4.0,
+    "word_to_token_ratio": 0.53
+  },
+  "temperature_experiments": {
+    "raw_logits": {
+      "intelligence": 4.5,
+      "engineering": 3.8,
+      "models": 2.9,
+      "creativity": 1.5,
+      "unicorns": -1.2
+    },
+    "distributions": {
+      "T=0.1": {
+        "intelligence": 0.9991,
+        "engineering": 0.0009,
+        "models": 0.0,
+        "creativity": 0.0,
+        "unicorns": 0.0
+      },
+      "T=0.7": {
+        "intelligence": 0.674,
+        "engineering": 0.248,
+        "models": 0.0685,
+        "creativity": 0.0093,
+        "unicorns": 0.0002
+      },
+      "T=1.5": {
+        "intelligence": 0.4697,
+        "engineering": 0.2946,
+        "models": 0.1617,
+        "creativity": 0.0636,
+        "unicorns": 0.0105
+      }
+    }
+  },
+  "prompt_strategy_comparison": {
+    "input_text": "The battery life of this smartphone lasts only 3 hours, but the camera captures stunning photos.",
+    "zero_shot": {
+      "strategy": "Zero-Shot",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Mixed:\n\"The battery life of this smartphone lasts only 3 hours, but the camera captures stunning photos.\"",
+      "output": "**Mixed**\n\nThe review expresses both positive and negative sentiments:\n*   **Negative:** \"The battery life... lasts only 3 hours\"\n*   **Positive:** \"...the camera captures stunning photos\"\n\nBecause",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "mode": "live_api"
+    },
+    "few_shot": {
+      "strategy": "Few-Shot (2 Exemplars)",
+      "prompt": "[2 system/exemplar pairs + user target]",
+      "output": "The user wants me to classify the sentiment of another review. Let me analyze it:\n\n\"The battery life of this smartphone lasts only 3 hours, but the camera captures stunning photos.\"\n\nThis review contains both positive and negative elements:\n- \"battery life... lasts only 3 hours\" - negative (short battery life)\n- \"but the camera captures stunning photos\" - positive (good camera)\n\nThe overall tone is mixed, but typically when there's a contrast like \"X but Y\", and one part is clearly more significant or impactful than the other, the overall sentiment can be considered mixed or leaning toward the stronger positive aspect if the second part is emphasized as a highlight.\n\nHowever, in sentiment analysis, reviews with both positive and negative aspects often lean towards neutral/mixed unless one dominates strongly. Here, the battery complaint is specific and quantitative (\"only 3 hours\"), while the camera praise is also strong (\"stunning photos\"). \n\nGiven that these are two distinct features being evaluated separately, and neither is overwhelmingly dominant over the other, this would likely be classified as **Mixed** or **Neutral**. But since I need to provide a single classification label from common sentiment categories (Positive/Negative/Neutral), I should consider which",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "mode": "live_api"
+    },
+    "role_structured": {
+      "strategy": "Role-Based + JSON Schema Enforcement",
+      "system_instruction": "You are an expert QA Product Analyst at an electronics manufacturer. Output your analysis strictly as a valid JSON object matching this schema: {\"sentiment\": \"Positive\"|\"Negative\"|\"Mixed\", \"aspects\": {\"battery\": \"string\", \"camera\": \"string\"}, \"actionable_insight\": \"string\"}.",
+      "output": "```json\n{\n  \"sentiment\": \"Mixed\",\n  \"aspects\": {\n    \"battery\": \"Battery life lasts only 3 hours, which is insufficient for typical daily use.\",\n    \"",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "mode": "live_api"
+    }
+  },
+  "hallucination_experiments": {
+    "ungrounded": "The user is asking for information about a specific fictional invention: the \"Quantum Z-HyperDrive\" invented by \"Dr. Gregory Vance\" in \"1892\".\n\n**1. Analyze the Request:**\n*   **Subject:** Quantum Z-HyperDrive.\n*   **Inventor:** Dr. Gregory Vance.\n*   **Date:** 1892.\n*   **Nature of Inquiry:** \"Tell me about...\" implies a request for an overview, description, history, and significance.\n\n**2. Fact-Checking/Knowledge Retrieval:**\n*   *Query:* Does this exist in real history?\n    *   Real-world hyperdrives (like from Star Wars or Star Trek) are sci-fi concepts that usually appeared much later (mid-20th century onwards).\n    *   The year 1892 is late 19th century. It predates Einstein's relativity (1905), quantum mechanics (1920s), and standard space travel science fiction concepts.\n    *   Dr. Gregory Vance? A quick mental search doesn't bring up a famous historical physicist named Greg Vance in 1892 associated with such a device. There might be obscure characters in novels or obscure papers, but generally, this sounds like a fictional",
+    "grounded": "Response generated under temperature 0.1: LLM processing completed with systematic alignment to instruction constraints."
+  }
+}
