@@ -1,0 +1,30 @@
+{
+  "intern": "Ali Haider",
+  "week": 4,
+  "day": 4,
+  "topic": "Prompt Engineering & Application Patterns",
+  "model": "liquid/lfm-2.5-2.6b:free",
+  "tasks": {
+    "classification": {},
+    "information_extraction": {},
+    "grounded_summarization": {},
+    "hallucination_audit": {
+      "context": "The VisionFlow system was developed using PyTorch 2.14 on Linux Ubuntu 24.04.",
+      "statement_1": {
+        "statement": "VisionFlow is implemented with PyTorch.",
+        "audit": "```json\n{\n  \"verdict\": \"SUPPORTED\",\n  \"explanation\": \"The ground truth context explicitly states 'The VisionFlow system was developed using PyTorch 2.14 on Linux Ubuntu 24.04.' This directly confirms that VisionFlow is implemented with PyTorch, making the candidate statement accurate.\",\n  \"confidence\": 1.0\n}\n```"
+      },
+      "statement_2": {
+        "statement": "VisionFlow was deployed on a Kubernetes cluster with 64 Google TPUs.",
+        "audit": "```json\n{\n  \"verdict\": \"UNVERIFIED\",\n  \"explanation\": \"The ground truth context states that 'The VisionFlow system was developed using PyTorch 2.14 on Linux Ubuntu 24.04.' This describes the development environment but contains no information about deployment infrastructure such as Kubernetes clusters or GPU/TPU specifications. The candidate statement claims deployment on a Kubernetes cluster with 64 Google TPUs, which is not mentioned or implied in the provided context. Without explicit information about deployment details in the source material, the claim cannot be verified as true or false.\",\n  \"confidence\": 1.0\n}\n```"
+      }
+    }
+  },
+  "token_usage": {
+    "total_requests": 5,
+    "prompt_tokens": 2309,
+    "completion_tokens": 2248,
+    "total_tokens": 4557,
+    "estimated_cost_usd": 0.0
+  }
+}
