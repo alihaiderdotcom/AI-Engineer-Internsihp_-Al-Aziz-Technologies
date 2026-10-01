@@ -34,13 +34,24 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 │
 ├── Week 4/ - Generative AI, LLMs & Hugging Face
 │   ├── Day 1/ - Generative AI & LLM Fundamentals
-│   ├── Day 2/ - Hugging Face Transformers & Pipelines
-│   ├── Day 3/ - Fine-Tuning & Prompt Tuning
-│   ├── Day 4/ - Embeddings & Semantic Search
+│   ├── Day 2/ - LLM APIs & Application Development
+│   ├── Day 3/ - Hugging Face Transformers & Local Inference
+│   ├── Day 4/ - Prompt Engineering & Tool Calling
 │   └── Day 5/ - Weekly Project & Revision
 │
 ├── Week 5/ - RAG, Vector Databases, AI Agents & APIs
+│   ├── Day 1/ - Embeddings & Semantic Search
+│   ├── Day 2/ - SQLite Vector Store
+│   ├── Day 3/ - Retrieval-Augmented Generation
+│   ├── Day 4/ - Tool-Using AI Agents
+│   └── Day 5/ - KnowledgeDesk Integration Project
+│
 └── Week 6/ - Advanced AI Engineering & Master Project
+	├── Day 1/ - Evaluation & Regression Testing
+	├── Day 2/ - HTTP API Engineering
+	├── Day 3/ - Reliability, Security & Observability
+	├── Day 4/ - Packaging & Deployment
+	└── Day 5/ - KnowledgeDesk Master Project
 ```
 
 ## Learning Goals
@@ -72,10 +83,43 @@ This repository documents my complete 6-week AI Engineering Internship journey, 
 - [x] **Week 3, Day 4** - Computer Vision Fundamentals & CNNs
 - [x] **Week 3, Day 5** - Weekly Project & Revision (VisionFlow)
 - [x] **Week 4, Day 1** - Generative AI & LLM Fundamentals
-- [ ] Weeks 4-6 (in progress)
+- [x] **Week 4, Day 2** - LLM APIs & Application Development
+- [x] **Week 4, Day 3** - Hugging Face Transformers & Local Inference
+- [x] **Week 4, Day 4** - Prompt Engineering & Tool Calling
+- [x] **Week 4, Day 5** - OmniAssist Weekly Project
+- [x] **Week 5, Day 1** - Embeddings & Semantic Search
+- [x] **Week 5, Day 2** - SQLite Vector Store
+- [x] **Week 5, Day 3** - Retrieval-Augmented Generation
+- [x] **Week 5, Day 4** - Tool-Using AI Agents
+- [x] **Week 5, Day 5** - KnowledgeDesk Integration Project
+- [x] **Week 6, Day 1** - Evaluation & Regression Testing
+- [x] **Week 6, Day 2** - HTTP API Engineering
+- [x] **Week 6, Day 3** - Reliability, Security & Observability
+- [x] **Week 6, Day 4** - Packaging & Deployment
+- [x] **Week 6, Day 5** - KnowledgeDesk Master Project
 
 ## Technologies & Tools
 
 **Languages:** Python 3.x  
 **ML/AI Libraries:** NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow  
-**LLM Frameworks:**
+**LLM Frameworks:** Hugging Face Transformers, OpenAI-compatible APIs, Pydantic
+**Retrieval & Data:** SQLite, vector similarity search, JSON
+**Application & Delivery:** HTTP API, FastAPI concepts, Docker
+
+## Final Projects
+
+- **Week 4:** [OmniAssist](Week%204/Day%205/README.md), a multi-task assistant with streaming, schemas, and tool calling.
+- **Week 5:** [KnowledgeDesk](Week%205/Day%205/README.md), an offline-first cited RAG assistant with safe tools.
+- **Week 6:** [KnowledgeDesk Master Project](Week%206/Day%205/README.md), evaluated and packaged behind an HTTP API with deployment documentation.
+
+## Verification
+
+Weeks 5 and 6 can be validated without API keys or external model downloads:
+
+```bash
+python "Week 5/Day 5/knowledge_desk.py"
+python "Week 6/Day 1/evaluation.py"
+python "Week 6/Day 5/master_project.py"
+```
+
+The master evaluation covers cited retrieval, safe calculator tool use, and explicit abstention when indexed evidence is missing.
