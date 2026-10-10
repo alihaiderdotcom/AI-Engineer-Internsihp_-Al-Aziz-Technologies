@@ -1,0 +1,60 @@
+{
+  "project": "KnowledgeDesk",
+  "intern": "Ali Haider",
+  "organization": "Al Aziz Technologies",
+  "generated_at": "2026-10-08T17:01:14.499699+00:00",
+  "capabilities": [
+    "semantic retrieval",
+    "cited RAG",
+    "safe tool use",
+    "HTTP API",
+    "evaluation",
+    "auditability"
+  ],
+  "evaluation": {
+    "total": 3,
+    "passed": 3,
+    "pass_rate": 1.0,
+    "results": [
+      {
+        "question": "How does KnowledgeDesk cite retrieved documents?",
+        "passed": true,
+        "response": {
+          "mode": "retrieval",
+          "answer": "KnowledgeDesk retrieves relevant documents and includes their identifiers as citations.",
+          "citations": [
+            "week-5-rag"
+          ],
+          "grounded": true,
+          "scores": {
+            "week-5-rag": 0.447
+          }
+        }
+      },
+      {
+        "question": "Calculate: sqrt(144) + 8",
+        "passed": true,
+        "response": {
+          "mode": "tool",
+          "query": "Calculate: sqrt(144) + 8",
+          "tool": "calculate",
+          "tool_result": {
+            "status": "success",
+            "value": 20.0
+          }
+        }
+      },
+      {
+        "question": "What is the moon made of?",
+        "passed": true,
+        "response": {
+          "mode": "retrieval",
+          "answer": "I do not have enough evidence in the indexed documents.",
+          "citations": [],
+          "grounded": false
+        }
+      }
+    ]
+  },
+  "status": "passed"
+}
